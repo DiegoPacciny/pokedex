@@ -1,0 +1,205 @@
+*{
+   font-family: Puppins, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fondo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.titulo-inicial {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 430px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../img/banner.jpg");
+}
+
+.todo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.busquedad{
+    appearance: none; /* Elimina el estilo predeterminado del select */
+    padding: 12px 20px; /* Espaciado interno */
+    border: 2px solid #ccc; /* Borde de 2px sólido y color gris */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    outline: none; /* Eliminar el contorno al hacer foco */
+    background-color: #f2f2f2; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para cambios */
+
+}
+
+.busquedad:focus {
+    background-color: #e0e0e0; /* Cambio de color de fondo al hacer foco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer foco */
+  }
+
+  .selector{
+    appearance: none; /* Elimina el estilo predeterminado del select */
+    padding: 12px 20px; /* Espaciado interno */
+    border: 2px solid #ccc; /* Borde de 2px sólido y color gris */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    outline: none; /* Eliminar el contorno al hacer foco */
+    background-color: #f2f2f2; /* Color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: background-color 0.3s, box-shadow 0.3s; /* Transición suave para cambios */
+  }
+
+  .selectore:focus {
+    background-color: #e0e0e0; /* Cambio de color de fondo al hacer foco */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer foco */
+  }
+
+  .botonnn {
+    padding: 12px 20px; /* Espaciado interno */
+    border: 2px solid #21a825; /* Borde de 2px sólido y color verde */
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 16px; /* Tamaño de fuente */
+    color: white; /* Color de texto blanco */
+    background-color: rgb(61, 204, 61)
+  }
+
+  .botonnn:hover {
+    background-color: #91ff75; /* Cambio de color de fondo al pasar el mouse */
+    color: #fff; /* Cambio de color de texto al pasar el mouse */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave para cambios */
+  }
+
+  .elegir {
+    display: inline-block; /* Permite que el contenedor se ajuste al tamaño del contenido */
+    border: 2px solid #007bff; /* Borde de 2px sólido y color azul */
+    border-radius: 5px; /* Bordes redondeados */
+    overflow: hidden; /* Evita que los bordes se superpongan al contenido */
+    background-color: #007bff;
+  }
+  
+  /* Estilos para el enlace con la clase "pokemon" dentro del contenedor */
+  .pokemon {
+    display: block; /* Convierte el enlace en un elemento de bloque para ocupar todo el contenedor */
+    padding: 10px 20px; /* Espaciado interno */
+    text-decoration: none; /* Quita la decoración predeterminada del texto */
+    color: #fcfcfc; /* Color del texto azul */
+    font-weight: bold; /* Texto en negrita */
+    transition: color 0.3s; /* Transición suave para cambios de color */
+  }
+  
+  .pokemon:hover {
+    color: #0056b3; /* Cambio de color del texto al pasar el mouse */
+  }
+
+.pokemon-image img {
+    width: 50%;
+    height: auto;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    .pokemon-card, .trainer-card {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .pokemon-card, .trainer-card {
+        width: 100%;
+    }
+}
+
+
+
+.pokemon-card, .trainer-card {
+    width: 10%;
+    height: auto;
+    background-image: url("../img/cartas.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    margin: 2%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 0 10px white;
+}
+
+.pokemon-name, .trainer-name, .trainer-age, .trainer-region, .pokemon-id {
+    font-optical-sizing: auto;
+    font-weight: "weight";
+    font-style: normal;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+form {
+    font-optical-sizing: auto;
+    font-weight: "weight";
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.pokemon-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.trainer-pokemon, .pokemon-type {
+    font-optical-sizing: auto;
+    font-weight: "weight";
+    font-style: normal;
+    font-size: 1em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.pokemon-type div {
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 2px;
+}
+
+.bug-type { background-color: #9CBF51; color: #fff; }
+.dark-type { background-color: #635E61; color: #fff; }
+.dragon-type { background-color: #7E7DC6; color: #fff; }
+.electric-type { background-color: #F0C94D; color: #fff; }
+.fairy-type { background-color: #FF89B4; color: #fff; }
+.fighting-type { background-color: #BA4A44; color: #fff; }
+.fire-type { background-color: #F26522; color: #fff; }
+.flying-type { background-color: #87A3C8; color: #fff; }
+.ghost-type { background-color: #66638B; color: #fff; }
+.grass-type { background-color: #72BE53; color: #fff; }
+.ground-type { background-color: #E0B35A; color: #fff; }
+.ice-type { background-color: #9ED8D9; color: #000; }
+.normal-type { background-color: #A7A3A2; color: #fff; }
+.poison-type { background-color: #B46FB4; color: #fff; }
+.psychic-type { background-color: #E47097; color: #fff; }
+.rock-type { background-color: #A48F3F; color: #fff; }
+.steel-type { background-color: #9BA5A8; color: #fff; }
+.water-type { background-color: #539FFA; color: #fff; }
